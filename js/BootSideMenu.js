@@ -57,6 +57,7 @@
 	$(document).on('click', '.sidebar .list-group-item', function(){
 		$('.sidebar .list-group-item').each(function(){
 			$(this).removeClass('active');
+			$('.submenu').fadeOut();
 		});
 		$(this).addClass('active');
 	});
